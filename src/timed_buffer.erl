@@ -2,7 +2,7 @@
 
 -behaviour(gen_server).
 
--export([start_link/3, add/2, flush/1]).
+-export([start_link/3, start_link/4, add/2, flush/1]).
 -export([init/1, handle_call/3, handle_cast/2, handle_info/2, terminate/2, code_change/3]).
 
 -record(state, {flush_fun, flush_count, flush_timeout, timer, items = [], item_count = 0}).
@@ -11,6 +11,9 @@
 
 start_link(FlushFun, FlushCount, FlushTimeout) ->
     gen_server:start_link(?MODULE, [FlushFun, FlushCount, FlushTimeout], []).
+
+start_link(Name, FlushFun, FlushCount, FlushTimeout) ->
+    gen_server:start_link(Name, ?MODULE, [FlushFun, FlushCount, FlushTimeout], []).
 
 add(Item, Server) ->
     gen_server:call(Server, {add, Item}).
