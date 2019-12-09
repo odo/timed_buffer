@@ -1,9 +1,8 @@
 {application, timed_buffer,
  [
-  {description, ""},
+  {description, "Buffer that flushes automatically after some times or inserts"},
   {vsn, "0.1.0"},
   {registered, []},
   {applications, [ kernel, stdlib ]},
-  {mod, { timed_buffer, []}},
   {env, []}
  ]}.
