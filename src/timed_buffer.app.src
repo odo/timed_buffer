@@ -4,5 +4,8 @@
   {vsn, "0.1.0"},
   {registered, []},
   {applications, [ kernel, stdlib ]},
-  {env, []}
- ]}.
+  {env, []},
+  {licenses, ["MIT"]},
+  {links, [{"GitHub", "https://github.com/odo/timed_buffer"}]}
+ ]
+}.
