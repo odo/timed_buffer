@@ -1,6 +1,6 @@
 {application, timed_buffer,
  [
-  {description, "Buffer that flushes automatically after some times or inserts"},
+  {description, "Buffer that flushes automatically after some time or number of inserts"},
   {vsn, "0.1.0"},
   {registered, []},
   {applications, [ kernel, stdlib ]},
