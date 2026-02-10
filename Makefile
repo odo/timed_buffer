@@ -1,3 +1,3 @@
 .PHONY: all test
 test:
-	./rebar com skip_deps=true && deps/etest/bin/etest-runner $*
+	ETEST_ARGS="-pa  _build/default/lib/timed_buffer/ebin/"  _build/default/lib/etest/bin/etest-runner

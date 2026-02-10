@@ -1,7 +1,13 @@
 -module(timed_buffer_test).
 -include_lib("etest/include/etest.hrl").
 
--compile(export_all).
+-export([
+         test_timer/0,
+         test_count/0,
+         test_cancel_timers/0,
+         test_count_and_timers/0,
+         test_flush/0
+        ]).
 
 -define(WAITFOR(Msg),
     timer:tc(

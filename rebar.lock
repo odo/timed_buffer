@@ -1,4 +1,8 @@
-[{<<"etest">>,
-  {git,"https://github.com/wooga/etest.git",
-       {ref,"c44a1a1d47e512a0b4a6cb2741bed4b48682a5c7"}},
-  0}].
+{"1.2.0",
+[{<<"etest">>,{pkg,<<"etest">>,<<"1.2.1">>},0}]}.
+[
+{pkg_hash,[
+ {<<"etest">>, <<"98ED0A02679786B6706FCD76D84E326D6F2FE9DCF8D05CA96E001CA58EC3E7D5">>}]},
+{pkg_hash_ext,[
+ {<<"etest">>, <<"939AD33382BF49542DB158C32DF6E7669D31868A51E187C3549DD5E5E54B82BE">>}]}
+].

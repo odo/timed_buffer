@@ -12,7 +12,13 @@ in batches but want to have an maximum time any piece stays in the buffer.
 ```
 git clone git@github.com:odo/timed_buffer.git
 cd timed_buffer
-./rebar get com
+rebar3 deps compile
+```
+
+## Running tests
+
+```
+make test
 ```
 
 # Example Usage
